@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on LicolnLee`s Blog</title>
+    <link>https://licolnlee.icu/tools/</link>
+    <description>Recent content in Tools on LicolnLee`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 08 May 2020 22:32:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://licolnlee.icu/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AdGuardHome</title>
+      <link>https://licolnlee.icu/tools/002/</link>
+      <pubDate>Fri, 08 May 2020 22:32:56 +0800</pubDate>
+      
+      <guid>https://licolnlee.icu/tools/002/</guid>
+      <description>Running for the first time DNS works on port 53, which requires superuser privileges. Therefore, you need to run it with sudo in terminal:
+sudo ./AdGuardHome On Windows, you will need to run cmd.exe with admin privileges and run AdGuardHome.exe from there.
+When you run AdGuard Home for the first time, it will start listening to 0.0.0.0:3000 and prompt you to open it in your browser:
+AdGuard Home is available on the following addresses: Go to http://127.</description>
+    </item>
+    
+    <item>
+      <title>DNS Spoofing</title>
+      <link>https://licolnlee.icu/tools/001/</link>
+      <pubDate>Fri, 08 May 2020 22:19:39 +0800</pubDate>
+      
+      <guid>https://licolnlee.icu/tools/001/</guid>
+      <description>What is DNS cache poisoning? Imagine that, as a senior-year prank, high school seniors change out all the room numbers on their high school campus, so that the new students who don&amp;rsquo;t know the campus layout yet will spend the next day getting lost and showing up in the wrong classrooms. Now imagine that the mismatched room numbers get recorded in a campus directory, and students keep heading to the wrong rooms until someone finally notices and corrects the directory.</description>
+    </item>
+    
+  </channel>
+</rss>

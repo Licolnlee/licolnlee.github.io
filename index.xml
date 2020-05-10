@@ -1,0 +1,167 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LicolnLee`s Blog on LicolnLee`s Blog</title>
+    <link>https://licolnlee.icu/</link>
+    <description>Recent content in LicolnLee`s Blog on LicolnLee`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 08 May 2020 22:09:25 +0800</lastBuildDate>
+    <atom:link href="https://licolnlee.icu/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tools</title>
+      <link>https://licolnlee.icu/tools/</link>
+      <pubDate>Fri, 08 May 2020 22:32:56 +0800</pubDate>
+      
+      <guid>https://licolnlee.icu/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://licolnlee.icu/projects/</link>
+      <pubDate>Fri, 08 May 2020 22:09:25 +0800</pubDate>
+      
+      <guid>https://licolnlee.icu/projects/</guid>
+      <description>&lt;h2 id=&#34;bdfb-spider_v5httpsgithubcomlicolnleebdfb-spider_v5-an-autospide-project-for-bdfb_v5&#34;&gt;&lt;a href=&#34;https://github.com/Licolnlee/BDFB-spider_v5&#34;&gt;BDFB-spider_v5&lt;/a&gt; An autospide project for BDFB_v5.&lt;/h2&gt;
+&lt;h2 id=&#34;ccgp_spiderhttpsgithubcomlicolnleeccgp_spider--specified-for-ccgp-goverment-project-to-acquire-information&#34;&gt;&lt;a href=&#34;https://github.com/Licolnlee/CCGP_Spider&#34;&gt;CCGP_Spider&lt;/a&gt;  Specified for CCGP Goverment project to acquire information.&lt;/h2&gt;
+&lt;h2 id=&#34;glut_drcom_autologin_projecthttpsgithubcomlicolnleeglut_drcom_autologin_project-glut-drcom-autocommit-project-is-a-project-for-glut-drcom-account-to-autologin-through-shell&#34;&gt;&lt;a href=&#34;https://github.com/Licolnlee/GLUT_Drcom_Autologin_Project&#34;&gt;GLUT_Drcom_Autologin_Project&lt;/a&gt; GLUT Drcom AutoCommit Project is a project for GLUT Drcom account to autologin through shell.&lt;/h2&gt;
+&lt;h2 id=&#34;community_health_management_projecthttpsgithubcomlicolnleecommunity_health_management_project-community-health-management-project-is-a-simulated-project-for-community-medical-support-group-in-service-of-community-social-health-systema-undergraduate-design-project-backup&#34;&gt;&lt;a href=&#34;https://github.com/Licolnlee/Community_Health_Management_Project&#34;&gt;Community_Health_Management_Project&lt;/a&gt; Community Health Management Project is a simulated project for community medical support group in service of community social health system.(A undergraduate design project backup)&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://licolnlee.icu/post/</link>
+      <pubDate>Fri, 08 May 2020 11:17:57 +0800</pubDate>
+      
+      <guid>https://licolnlee.icu/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LicolnLee</title>
+      <link>https://licolnlee.icu/about/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://licolnlee.icu/about/</guid>
+      <description>
+&lt;style&gt;
+
+    @import url(&#39;https://fonts.googleapis.com/css?family=Katibeh&amp;display=swap&#39;);
+
+    .about-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about-info-left li {
+        list-style-type: none;
+    }
+
+    .about-info-right {
+        margin: .5em 1.25em;
+    }
+
+    .about-info-right img {
+        width: 130px;
+    }
+
+    .about-info-right .left-ear,
+    .about-info-right .left-hand,
+    .about-info-right .right-ear,
+    .about-info-right .right-hand {
+        display: none;
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .about-info {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .about-info-right {
+            margin: auto auto 2em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-info-right img {
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
+
+        .about-info-right .left-hand {
+            font-family: &#39;Katibeh&#39;;
+            display: inline;
+            font-size: 5em;
+            transform: translate(20px);
+            -moz-transform: translate(20px);
+            -webkit-transform: translate(20px);
+            -o-transform: translate(20px);
+        }
+
+        .about-info-right .right-hand {
+            font-family: &#39;Katibeh&#39;;
+            display: inline;
+            font-size: 5em;
+            transform: translate(-18px);
+            -moz-transform: translate(-18px);
+            -webkit-transform: translate(-18px);
+            -o-transform: translate(-18px);
+        }
+
+        .about-info-right .left-ear {
+            display: inline;
+            font-size: 1.2em;
+            align-self: flex-start;
+            transform: rotate(-40deg) translate(20px, 15px);
+            -moz-transform: rotate(-40deg) translate(20px, 15px);
+            -webkit-transform: rotate(-40deg) translate(20px, 15px);
+            -o-transform: rotate(-40deg) translate(20px, 15px);
+        }
+
+        .about-info-right .right-ear {
+            display: inline;
+            font-size: 1.2em;
+            align-self: flex-start;
+            transform: rotate(45deg) translate(-13px, 15px);
+            -moz-transform: rotate(45deg) translate(-13px, 15px);
+            -webkit-transform: rotate(45deg) translate(-13px, 15px);
+            -o-transform: rotate(45deg) translate(-13px, 15px);
+        }
+    }
+&lt;/style&gt;
+
+
+&lt;div class=&#34;about-info&#34;&gt;
+    &lt;div class=&#34;about-info-left&#34;&gt;
+        &lt;p&gt;One playboy who wants to play coding.&lt;/p&gt;
+        &lt;p&gt;Contact me:&lt;/p&gt;
+        &lt;ul&gt;
+	&lt;li&gt;&lt;p&gt;&lt;span class=&#34;iconfont icon-mail&#34;&gt;&lt;/span&gt; Email: &lt;a href=&#34;mailto:me@licolnlee.icu&#34;
+                    rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;me@licolnlee.icu&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;p&gt;&lt;span class=&#34;iconfont icon-github&#34;&gt;&lt;/span&gt; GitHub: &lt;a href=&#34;https://github.com/Licolnlee&#34;
+                        rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Licolnlee&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;about-info-right&#34;&gt;
+	    &lt;div class=&#34;left-hand&#34;&gt;&lt;span style=&#34;font-size: 0.5em&#34;&gt;&amp;ensp;&lt;/span&gt;٩&lt;/div&gt;
+        &lt;div class=&#34;left-ear&#34;&gt;▲&lt;/div&gt;
+        &lt;img alt=&#34;Mogeko&#34; src=&#34;https://licolnlee.icu/images/me/avatar.jpg&#34;&gt;
+        &lt;div class=&#34;right-ear&#34;&gt;▲&lt;/div&gt;
+        &lt;div class=&#34;right-hand&#34;&gt;و&lt;span style=&#34;font-size: 0.5em&#34;&gt;✧&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;My Github chart:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ghchart.rshah.org/licolnlee&#34; alt=&#34;Licolnlee&#39;s Github chart&#34; style=&#34;width: 100%;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

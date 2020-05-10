@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noodp"/>
+    <meta name="author" content="LicolnLee">
+    <meta name="description" content="LicolnLee 的个人博客">
+    
+    
+    
+    <link rel="next" href="https://licolnlee.icu/tools/002/" />
+    <link rel="canonical" href="https://licolnlee.icu/tools/001/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>
+        
+        
+            DNS Spoofing | LicolnLee`s Blog
+        
+    </title>
+    <meta name="title" content="DNS Spoofing | LicolnLee`s Blog">
+    
+<link rel="stylesheet" href="/css/main.min.css">
+
+
+    
+    
+ 
+
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/licolnlee.icu"
+    },
+    "articleSection" : "tools",
+    "name" : "DNS Spoofing",
+    "headline" : "DNS Spoofing",
+    "description" : "What is DNS cache poisoning? Imagine that, as a senior-year prank, high school seniors change out all the room numbers on their high school campus, so that the new students who don\x26rsquo;t know the campus layout yet will spend the next day getting lost and showing up in the wrong classrooms. Now imagine that the mismatched room numbers get recorded in a campus directory, and students keep heading to the wrong rooms until someone finally notices and corrects the directory.",
+    "inLanguage" : "en-US",
+    "author" : "LicolnLee",
+    "creator" : "LicolnLee",
+    "publisher": "LicolnLee",
+    "accountablePerson" : "LicolnLee",
+    "copyrightHolder" : "LicolnLee",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-05-08 22:19:39 \x2b0800 CST",
+    "dateModified" : "2020-05-08 22:19:39 \x2b0800 CST",
+    "url" : "https:\/\/licolnlee.icu\/tools\/001\/",
+    "wordCount" : "949",
+    "keywords" : [ "AdGuardHome","DNS", "LicolnLee`s Blog"]
+}
+</script>
+
+  </head>
+    <body class="">
+        <div class="wrapper">
+            <nav class="navbar">
+    
+        <progress class="content_progress" max="0" value="0"></progress>
+    
+    <div class="container">
+        
+            <div class="navbar-header header-back2home-logo">
+                <span class="logo_mark" >>$</span>
+                <a href="https://licolnlee.icu">
+                    <span class="logo_text" >cd /home/</span>
+                    <span class="logo_cursor" ></span>
+                </a>
+            </div>
+        
+        <div class="navbar-right">
+                
+                <span class="menu">
+                
+                <a class="menu-item" href="/tools/" title="">Tools</a>
+                
+                <a class="menu-item" href="/post/" title="">Blog</a>
+                
+                <a class="menu-item" href="/projects/" title="">Projects</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+                <a class="menu-item" href="/about/" title="LicolnLee">LicolnLee</a>
+                
+                <span class="divide"></span>
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a>
+                </span>
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+    
+        <progress class="content_progress" max="0" value="0"></progress>
+    
+     <div class="container">
+        <div class="navbar">
+            <div class="navbar-header header-logo">
+                    <a href="https://licolnlee.icu">LicolnLee`s Blog</a>
+            </div>
+            <div class="navbar-right">
+                <div><a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a></div>
+                <div class="menu-toggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                <nav class="mb-md">
+                    
+                    
+                        <a class="menu-item" href="/tools/" title="">
+                            <h3>Tools</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/post/" title="">
+                            <h3>Blog</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/projects/" title="">
+                            <h3>Projects</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/categories/" title="">
+                            <h3>Categories</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/tags/" title="">
+                            <h3>Tags</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/about/" title="">
+                            <h3>About</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/about/" title="LicolnLee">
+                            <h3>LicolnLee</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                </nav>
+        </div>
+    </div>
+</nav>
+            <main class="main">
+                <div class="container">
+                    
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">DNS Spoofing</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://licolnlee.icu" rel="author">LicolnLee</a> with ♥
+                <span class="post-time">
+                on <time datetime=2020-05-08 itemprop="datePublished">May 8, 2020</time>
+                </span>
+                in
+                
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        
+                        
+                        
+                          <a href="https://licolnlee.icu/categories/dns/"> DNS, </a>
+                        
+                        
+                </span>
+                <span class="post-word-count">949 words,</span>
+                <span class="post-readingtime-count">5 minutes</span>
+        </div>
+    </header>
+
+    <div class="post-content">
+        
+
+        
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        <h2 id="what-is-dns-cache-poisoning">What is DNS cache poisoning?</h2>
+<h3 id="imagine-that-as-a-senior-year-prank-high-school-seniors-change-out-all-the-room-numbers-on-their-high-school-campus-so-that-the-new-students-who-dont-know-the-campus-layout-yet-will-spend-the-next-day-getting-lost-and-showing-up-in-the-wrong-classrooms-now-imagine-that-the-mismatched-room-numbers-get-recorded-in-a-campus-directory-and-students-keep-heading-to-the-wrong-rooms-until-someone-finally-notices-and-corrects-the-directory">Imagine that, as a senior-year prank, high school seniors change out all the room numbers on their high school campus, so that the new students who don&rsquo;t know the campus layout yet will spend the next day getting lost and showing up in the wrong classrooms. Now imagine that the mismatched room numbers get recorded in a campus directory, and students keep heading to the wrong rooms until someone finally notices and corrects the directory.</h3>
+<h3 id="dns-cache-poisoning-is-the-act-of-entering-false-information-into-a-dns-cache-so-that-dns-queries-return-an-incorrect-response-and-users-are-directed-to-the-wrong-websites-dns-cache-poisoning-is-also-known-as-dns-spoofing-ip-addresses-are-the-room-numbers-of-the-internet-enabling-web-traffic-to-arrive-in-the-right-places-dns-resolver-caches-are-the-campus-directory-and-when-they-store-faulty-information-traffic-goes-to-the-wrong-places-until-the-cached-information-is-corrected-note-that-this-does-not-actually-disconnect-the-real-websites-from-their-real-ip-addresses">DNS cache poisoning is the act of entering false information into a DNS cache, so that DNS queries return an incorrect response and users are directed to the wrong websites. DNS cache poisoning is also known as &lsquo;DNS spoofing.&rsquo; IP addresses are the &lsquo;room numbers&rsquo; of the Internet, enabling web traffic to arrive in the right places. DNS resolver caches are the &lsquo;campus directory,&rsquo; and when they store faulty information, traffic goes to the wrong places until the cached information is corrected. (Note that this does not actually disconnect the real websites from their real IP addresses.)</h3>
+<h3 id="because-there-is-typically-no-way-for-dns-resolvers-to-verify-the-data-in-their-caches-incorrect-dns-information-remains-in-the-cache-until-the-time-to-live-ttl-expires-or-until-it-is-removed-manually-a-number-of-vulnerabilities-make-dns-poisoning-possible-but-the-chief-problem-is-that-dns-was-built-for-a-much-smaller-internet-and-based-on-a-principle-of-trust-much-like-bgp-a-more-secure-dns-protocol-called-dnssec-aims-to-solve-some-of-these-problems-but-it-has-not-been-widely-adopted-yet">Because there is typically no way for DNS resolvers to verify the data in their caches, incorrect DNS information remains in the cache until the time to live (TTL) expires, or until it is removed manually. A number of vulnerabilities make DNS poisoning possible, but the chief problem is that DNS was built for a much smaller Internet and based on a principle of trust (much like BGP). A more secure DNS protocol called DNSSEC aims to solve some of these problems, but it has not been widely adopted yet.</h3>
+<h2 id="what-do-dns-resolvers-do">What do DNS resolvers do?</h2>
+<h3 id="dns-resolvers-provide-clients-with-the-ip-address-that-is-associated-with-a-domain-name-in-other-words-they-take-human-readable-website-addresses-like-cloudflarecom-and-translate-them-into-machine-readable-ip-addresses-when-a-user-attempts-to-navigate-to-a-website-their-operating-system-sends-a-request-to-a-dns-resolver-the-dns-resolver-responds-with-the-ip-address-and-the-web-browser-takes-this-address-and-initiates-loading-the-website">DNS resolvers provide clients with the IP address that is associated with a domain name. In other words, they take human-readable website addresses like &lsquo;cloudflare.com&rsquo; and translate them into machine-readable IP addresses. When a user attempts to navigate to a website, their operating system sends a request to a DNS resolver. The DNS resolver responds with the IP address, and the web browser takes this address and initiates loading the website.</h3>
+<h2 id="how-does-dns-caching-work">How does DNS caching work?</h2>
+<h3 id="a-dns-resolver-will-save-responses-to-ip-address-queries-for-a-certain-amount-of-time-in-this-way-the-resolver-can-respond-to-future-queries-much-more-quickly-without-needing-to-communicate-with-the-many-servers-involved-in-the-typical-dns-resolution-process-dns-resolvers-save-responses-in-their-cache-for-as-long-as-the-designated-time-to-live-ttl-associated-with-that-ip-address-allows-them-to">A DNS resolver will save responses to IP address queries for a certain amount of time. In this way, the resolver can respond to future queries much more quickly, without needing to communicate with the many servers involved in the typical DNS resolution process. DNS resolvers save responses in their cache for as long as the designated time to live (TTL) associated with that IP address allows them to.</h3>
+<h2 id="how-do-attackers-poison-dns-caches">How do attackers poison DNS caches?</h2>
+<h3 id="attackers-can-poison-dns-caches-by-impersonating-dns-nameservers-making-a-request-to-a-dns-resolver-and-then-forging-the-reply-when-the-dns-resolver-queries-a-nameserver-this-is-possible-because-dns-servers-use-udp-instead-of-tcp-and-because-currently-there-is-no-verification-for-dns-information">Attackers can poison DNS caches by impersonating DNS nameservers, making a request to a DNS resolver, and then forging the reply when the DNS resolver queries a nameserver. This is possible because DNS servers use UDP instead of TCP, and because currently there is no verification for DNS information.</h3>
+<h3 id="instead-of-using-tcp-which-requires-both-communicating-parties-to-perform-a-handshake-to-initiate-communication-and-verify-the-identity-of-the-devices-dns-requests-and-responses-use-udp-or-the-user-datagram-protocol-with-udp-there-is-no-guarantee-that-a-connection-is-open-that-the-recipient-is-ready-to-receive-or-that-the-sender-is-who-they-say-they-are-udp-is-vulnerable-to-forging-for-this-reason--an-attacker-can-send-a-message-via-udp-and-pretend-its-a-response-from-a-legitimate-server-by-forging-the-header-data">Instead of using TCP, which requires both communicating parties to perform a &lsquo;handshake&rsquo; to initiate communication and verify the identity of the devices, DNS requests and responses use UDP, or the User Datagram Protocol. With UDP, there is no guarantee that a connection is open, that the recipient is ready to receive, or that the sender is who they say they are. UDP is vulnerable to forging for this reason – an attacker can send a message via UDP and pretend it&rsquo;s a response from a legitimate server by forging the header data.</h3>
+<h3 id="if-a-dns-resolver-receives-a-forged-response-it-accepts-and-caches-the-data-uncritically-because-there-is-no-way-to-verify-if-the-information-is-accurate-and-comes-from-a-legitimate-source-dns-was-created-in-the-early-days-of-the-internet-when-the-only-parties-connected-to-it-were-universities-and-research-centers-there-was-no-reason-to-expect-that-anyone-would-try-to-spread-fake-dns-information">If a DNS resolver receives a forged response, it accepts and caches the data uncritically because there is no way to verify if the information is accurate and comes from a legitimate source. DNS was created in the early days of the Internet, when the only parties connected to it were universities and research centers. There was no reason to expect that anyone would try to spread fake DNS information.</h3>
+<h3 id="despite-these-major-points-of-vulnerability-in-the-dns-caching-process-dns-poisoning-attacks-are-not-easy-because-the-dns-resolver-does-actually-query-the-authoritative-nameserver-attackers-have-only-a-few-milliseconds-to-send-the-fake-reply-before-the-real-reply-from-the-authoritative-nameserver-arrives">Despite these major points of vulnerability in the DNS caching process, DNS poisoning attacks are not easy. Because the DNS resolver does actually query the authoritative nameserver, attackers have only a few milliseconds to send the fake reply before the real reply from the authoritative nameserver arrives.</h3>
+<h3 id="attackers-also-have-to-either-know-or-guess-a-number-of-factors-to-carry-out-dns-spoofing-attacks">Attackers also have to either know or guess a number of factors to carry out DNS spoofing attacks:</h3>
+<h3 id="which-dns-queries-are-not-cached-by-the-targeted-dns-resolver-so-that-the-resolver-will-query-the-authoritative-nameserver">Which DNS queries are not cached by the targeted DNS resolver, so that the resolver will query the authoritative nameserver</h3>
+<h3 id="what-port-the-dns-resolver-is-using--they-used-to-use-the-same-port-for-every-query-but-now-they-use-a-different-random-port-each-time">What port* the DNS resolver is using – they used to use the same port for every query, but now they use a different, random port each time</h3>
+<h3 id="which-authoritative-nameserver-the-query-will-go-to">Which authoritative nameserver the query will go to</h3>
+<h3 id="attackers-could-also-gain-access-to-the-dns-resolver-in-some-other-way-if-a-malicious-party-operates-hacks-or-gains-physical-access-to-a-dns-resolver-they-can-more-easily-alter-cached-data">Attackers could also gain access to the DNS resolver in some other way. If a malicious party operates, hacks, or gains physical access to a DNS resolver, they can more easily alter cached data.</h3>
+<p>*In networking, a port is a virtual point of communication reception. Computers have multiple ports, each with their own number, and for computers to talk to each other, certain ports have to be designated for certain kinds of communication. For instance, HTTP communications always go to port 80, and HTTPS always uses port 443.</p>
+<h2 id="dns-spoofing-and-censorship">DNS spoofing and censorship</h2>
+<h3 id="several-governments-have-intentionally-poisoned-dns-caches-within-their-countries-in-order-to-deny-access-to-certain-websites-or-web-resources">Several governments have intentionally poisoned DNS caches within their countries in order to deny access to certain websites or web resources.</h3>
+<h2 id="how-will-dnssec-help-prevent-dns-poisoning">How will DNSSEC help prevent DNS poisoning?</h2>
+<h3 id="dnssec-is-short-for-domain-name-system-security-extensions-and-it-is-a-means-of-verifying-dns-data-integrity-and-origin-dns-was-originally-designed-with-no-such-verification-which-is-why-dns-poisoning-is-possible">DNSSEC is short for Domain Name System Security Extensions, and it is a means of verifying DNS data integrity and origin. DNS was originally designed with no such verification, which is why DNS poisoning is possible.</h3>
+<h3 id="much-like-tlsssl-dnssec-uses-public-key-cryptography-a-way-of-digitally-signing-information-to-verify-and-authenticate-data-dnssec-extensions-were-published-in-2005-but-dnssec-is-not-yet-mainstream-leaving-dns-still-vulnerable-to-attacks">Much like TLS/SSL, DNSSEC uses public key cryptography (a way of digitally signing information) to verify and authenticate data. DNSSEC extensions were published in 2005, but DNSSEC is not yet mainstream, leaving DNS still vulnerable to attacks.</h3>
+
+    </div>
+
+    <div class="post-copyright">
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>LicolnLee </span>
+                </p>
+            
+
+            
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://licolnlee.icu/tools/001/>https://licolnlee.icu/tools/001/</span>
+            </p>
+            
+            
+            <p class="copyright-item lincese">
+                This article uses <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">the Creative Commons Attribution-Non-Commercial Use 4.0 International License Agreement </a>for licensing
+            </p>
+            
+    </div>
+
+
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s):
+            
+            <span class="tag"><a href="https://licolnlee.icu/tags/adguardhome/">
+                    #AdGuardHome</a></span>
+            
+            <span class="tag"><a href="https://licolnlee.icu/tags/dns/">
+                    #DNS</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> ·
+                <span><a href="https://licolnlee.icu">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        
+        <a href="https://licolnlee.icu/tools/002/" class="next" rel="next" title="AdGuardHome">AdGuardHome&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+        
+            
+                <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.bootcss.com/gitalk/1.5.2/gitalk.css">
+<script src="https://cdn.bootcss.com/gitalk/1.5.2/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+
+        clientID: 'b56d565392cb74947ee8',
+        clientSecret: '992b2bc83a769984ae6fb525a2c07e020f8335b3',
+        repo: 'licolnlee.github.io',
+        owner: 'Licolnlee',
+        admin: ['Licolnlee'],
+        id: location.pathname, 
+        distractionFreeMode: false 
+    });
+    (function () {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+            return;
+        }
+        gitalk.render('gitalk-container');
+    })();
+</script>
+
+            
+        
+    </div>
+</article>
+                </div>
+            </main>
+            <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2017 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i>
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://licolnlee.icu">LicolnLee</a> | </span>
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/Mogeko/Mogege" target="_blank" rel="external nofollow">Mogege</a></span>
+    </div>
+</footer>
+
+
+
+
+
+<script src="/js/vendor_main.min.js" defer ></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script> pangu.spacingPage();</script>
+
+        </div>
+    </body>
+</html>
