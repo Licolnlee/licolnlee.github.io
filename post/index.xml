@@ -6,19 +6,18 @@
     <description>Recent content in Posts on LicolnLee`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 08 May 2020 11:17:57 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 18:17:13 +0800</lastBuildDate>
     
 	<atom:link href="https://licolnlee.icu/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>First</title>
-      <link>https://licolnlee.icu/post/first/</link>
-      <pubDate>Fri, 08 May 2020 11:17:57 +0800</pubDate>
+      <title>利用 Hugo 和 GitHub Pages 搭建个人博客</title>
+      <link>https://licolnlee.icu/post/2020/0511/</link>
+      <pubDate>Mon, 11 May 2020 18:17:13 +0800</pubDate>
       
-      <guid>https://licolnlee.icu/post/first/</guid>
-      <description>Install Hugo Quick Install Binary(Cross-platform) Download the appropriate version for your platform from Hugo Releases. Once downloaded, the binary can be run from anywhere. You don’t need to install it into a global location. This works well for shared hosts and other systems where you don’t have a privileged account.
-Ideally, you should install it somewhere in your PATH for easy use. /usr/local/binis the most probable location.</description>
+      <guid>https://licolnlee.icu/post/2020/0511/</guid>
+      <description>第一次搭建静态博客，手还是有点生。 Hugo 和 Hexo 同属于一种通用的静态网站框架。严格来说，这类应该被称为静态网站生成器。其可方便的使用 Markdown 文件和主题一起</description>
     </item>
     
   </channel>

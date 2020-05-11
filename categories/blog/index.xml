@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on LicolnLee`s Blog</title>
-    <link>https://licolnlee.icu/tags/hugo/</link>
-    <description>Recent content in Hugo on LicolnLee`s Blog</description>
+    <title>Blog on LicolnLee`s Blog</title>
+    <link>https://licolnlee.icu/categories/blog/</link>
+    <description>Recent content in Blog on LicolnLee`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 11 May 2020 18:17:13 +0800</lastBuildDate>
     
-	<atom:link href="https://licolnlee.icu/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://licolnlee.icu/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

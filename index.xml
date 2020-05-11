@@ -9,11 +9,11 @@
     <atom:link href="https://licolnlee.icu/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Tools</title>
-      <link>https://licolnlee.icu/tools/</link>
-      <pubDate>Fri, 08 May 2020 22:32:56 +0800</pubDate>
+      <title>Posts</title>
+      <link>https://licolnlee.icu/post/</link>
+      <pubDate>Mon, 11 May 2020 18:17:13 +0800</pubDate>
       
-      <guid>https://licolnlee.icu/tools/</guid>
+      <guid>https://licolnlee.icu/post/</guid>
       <description></description>
     </item>
     
@@ -28,15 +28,6 @@
 &lt;h2 id=&#34;glut_drcom_autologin_projecthttpsgithubcomlicolnleeglut_drcom_autologin_project-glut-drcom-autocommit-project-is-a-project-for-glut-drcom-account-to-autologin-through-shell&#34;&gt;&lt;a href=&#34;https://github.com/Licolnlee/GLUT_Drcom_Autologin_Project&#34;&gt;GLUT_Drcom_Autologin_Project&lt;/a&gt; GLUT Drcom AutoCommit Project is a project for GLUT Drcom account to autologin through shell.&lt;/h2&gt;
 &lt;h2 id=&#34;community_health_management_projecthttpsgithubcomlicolnleecommunity_health_management_project-community-health-management-project-is-a-simulated-project-for-community-medical-support-group-in-service-of-community-social-health-systema-undergraduate-design-project-backup&#34;&gt;&lt;a href=&#34;https://github.com/Licolnlee/Community_Health_Management_Project&#34;&gt;Community_Health_Management_Project&lt;/a&gt; Community Health Management Project is a simulated project for community medical support group in service of community social health system.(A undergraduate design project backup)&lt;/h2&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>https://licolnlee.icu/post/</link>
-      <pubDate>Fri, 08 May 2020 11:17:57 +0800</pubDate>
-      
-      <guid>https://licolnlee.icu/post/</guid>
-      <description></description>
     </item>
     
     <item>
