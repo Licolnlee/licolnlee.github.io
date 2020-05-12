@@ -2,9 +2,9 @@
 
 ![Build & Deploy](https://github.com/Mogeko/Blog/workflows/Build%20&%20Deploy/badge.svg)
 
-这是 Mogeko 的个人博客，地址：**<https://licolnlee.icu>**
+这是 Licolnlee 的个人博客，地址：**<https://licolnlee.icu>**
 
-使用 Markdown 书写，用 [Hugo](https://gohugo.io/) 生成静态网页，用 GitHub Actions 部署到 [mogeko.github.io](https://github.com/Licolnlee/licolnlee.github.io) 上。
+使用 Markdown 书写，用 [Hugo](https://gohugo.io/) 生成静态网页，用 GitHub Actions 部署到 [licolnlee.github.io](https://github.com/Licolnlee/licolnlee.github.io) 上。
 
 主题使用的是 [LeaveIt](https://github.com/liuzc/LeaveIt)
 
